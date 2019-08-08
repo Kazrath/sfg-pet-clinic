@@ -1,31 +1,31 @@
 package atoll.springframework.sfgpetclinic.services.map;
 
-import atoll.springframework.sfgpetclinic.model.Specialty;
+import atoll.springframework.sfgpetclinic.model.Speciality;
 import atoll.springframework.sfgpetclinic.services.SpecialityService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class SpecialityServiceMap extends AbstractMapService<Specialty,Long> implements SpecialityService {
+public class SpecialityServiceMap extends AbstractMapService<Speciality,Long> implements SpecialityService {
 
     @Override
-    public Set<Specialty> findAll() {
+    public Set<Speciality> findAll() {
         return super.findAll();
     }
 
     @Override
-    public Specialty findByID(Long id) {
+    public Speciality findByID(Long id) {
         return  super.findByID(id);
     }
 
     @Override
-    public Specialty save(Specialty object) {
+    public Speciality save(Speciality object) {
         return super.save(object);
     }
 
     @Override
-    public void delete(Specialty object) {
+    public void delete(Speciality object) {
         super.delete(object);
     }
 
