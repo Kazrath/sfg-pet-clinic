@@ -1,35 +1,37 @@
 package atoll.springframework.sfgpetclinic.services.map;
 
-import atoll.springframework.sfgpetclinic.model.Pet;
-import atoll.springframework.sfgpetclinic.services.PetService;
+import atoll.springframework.sfgpetclinic.model.PetType;
+import atoll.springframework.sfgpetclinic.services.PetTypeService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
+public class PetTypeServiceMap extends AbstractMapService<PetType,Long> implements PetTypeService {
     @Override
-    public Set<Pet> findAll() {
+    public Set<PetType> findAll() {
         return super.findAll();
     }
 
     @Override
-    public Pet findByID(Long id) {
+    public PetType findByID(Long id) {
         return super.findByID(id);
     }
 
     @Override
-    public Pet save(Pet object) {
+    public PetType save(PetType object) {
         return super.save(object);
     }
 
     @Override
-    public void delete(Pet object) {
+    public void delete(PetType object) {
         super.delete(object);
     }
-
     @Override
     public void deleteByID(Long id) {
         super.deleteByID(id);
     }
+
+
+
 }
